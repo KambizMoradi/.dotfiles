@@ -1,0 +1,53 @@
+#!/bin/sh
+# set default editor
+export EDITOR=/usr/bin/nvim;
+
+# set default visual
+export VISUAL=/usr/bin/nvim;
+
+# FZF for fzf.vim
+export FZF_DEFAULT_OPTS='--reverse'
+
+# bat theme
+# export BAT_THEME="TwoDark"
+#
+
+
+append_path () {
+    case ":$PATH:" in
+        *:"$1":*)
+            ;;
+        *)
+            PATH="${PATH:+$PATH:}$1"
+    esac
+}
+
+
+directory_to_add=~/.bin
+if [ -d $directory_to_add ]
+then
+	append_path $directory_to_add
+	export PATH
+fi
+unset -f append_path
+
+
+# Icons for lf
+export LF_ICONS="di=📁:\
+ln=🔗:\
+ex=✅:\
+*.py=:\
+*.c=:\
+*.mp3=🎧:\
+*.mp4=🎬:\
+*.MP4=🎬:\
+*.jpg=🖼️:\
+*.png=🖼️:\
+*.m=:\
+*.js=:\
+*.html=🌐:\
+*.pdf=:\
+*.txt=🗒️:\
+*.tex=📜:\
+fi=:\
+"
