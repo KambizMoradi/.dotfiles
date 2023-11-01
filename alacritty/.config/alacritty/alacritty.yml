@@ -1,0 +1,96 @@
+# Font configuration
+font:
+  # Point size
+  normal:
+    family: monospace
+    style: Regular
+
+  bold:
+    family: monospace
+    style: Bold
+
+  italic:
+    family: monospace
+    style: Italic
+
+  bold_italic:
+    family: monospace
+    style: Bold Italic
+
+  size: 17.0
+
+env:
+  WINIT_X11_SCALE_FACTOR: "1"
+
+  # - ~/.config/alacritty/themes/
+  # https://github.com/eendroroy/alacritty-theme
+import:
+  - ~/.config/alacritty/themes/Cobalt2.yaml
+  # - ~/.config/alacritty/themes/afterglow.yaml
+  # - ~/.config/alacritty/themes/argonaut.yaml
+  # - ~/.config/alacritty/themes/atom_one_light.yaml
+  # - ~/.config/alacritty/themes/ayu_dark.yaml
+  # - ~/.config/alacritty/themes/base16_default_dark.yaml
+  # - ~/.config/alacritty/themes/blood_moon.yaml
+  # - ~/.config/alacritty/themes/breeze.yaml
+  # - ~/.config/alacritty/themes/campbell.yaml
+  # - ~/.config/alacritty/themes/challenger_deep.yaml
+  # - ~/.config/alacritty/themes/citylights.yaml
+  # - ~/.config/alacritty/themes/cyber_punk_neon.yaml
+  # - ~/.config/alacritty/themes/darcula.yaml
+  # - ~/.config/alacritty/themes/dark_pastels.yaml
+  # - ~/.config/alacritty/themes/doom_one.yml
+  # - ~/.config/alacritty/themes/dracula.yaml
+  # - ~/.config/alacritty/themes/falcon.yaml
+  # - ~/.config/alacritty/themes/flat_remix.yml
+  # - ~/.config/alacritty/themes/gnome_terminal.yaml
+  # - ~/.config/alacritty/themes/gotham.yaml
+  # - ~/.config/alacritty/themes/gruvbox_dark.yaml
+  # - ~/.config/alacritty/themes/gruvbox_light.yaml
+  # - ~/.config/alacritty/themes/gruvbox_material.yml
+  # - ~/.config/alacritty/themes/high_contrast.yaml
+  # - ~/.config/alacritty/themes/horizon-dark.yaml
+  # - ~/.config/alacritty/themes/hyper.yaml
+  # - ~/.config/alacritty/themes/iterm.yaml
+  # - ~/.config/alacritty/themes/konsole_linux.yaml
+  # - ~/.config/alacritty/themes/low_contrast.yaml
+  # - ~/.config/alacritty/themes/material_theme.yaml
+  # - ~/.config/alacritty/themes/material_theme_mod.yaml
+  # - ~/.config/alacritty/themes/monokai_charcoal.yaml
+  # - ~/.config/alacritty/themes/monokai_pro.yaml
+  # - ~/.config/alacritty/themes/moonlight_ii_vscode.yaml
+  # - ~/.config/alacritty/themes/night_owlish_light.yaml
+  # - ~/.config/alacritty/themes/nord.yaml
+  # - ~/.config/alacritty/themes/oceanic_next.yaml
+  # - ~/.config/alacritty/themes/omni.yml
+  # - ~/.config/alacritty/themes/one_dark.yaml
+  # - ~/.config/alacritty/themes/palenight.yml
+  # - ~/.config/alacritty/themes/papercolor_dark.yaml
+  # - ~/.config/alacritty/themes/papercolor_light.yaml
+  # - ~/.config/alacritty/themes/papertheme.yaml
+  # - ~/.config/alacritty/themes/pencil_dark.yaml
+  # - ~/.config/alacritty/themes/pencil_light.yaml
+  # - ~/.config/alacritty/themes/remedy_dark.yaml
+  # - ~/.config/alacritty/themes/rose-pine.yaml
+  # - ~/.config/alacritty/themes/seashells.yaml
+  # - ~/.config/alacritty/themes/smoooooth.yml
+  # - ~/.config/alacritty/themes/snazzy.yaml
+  # - ~/.config/alacritty/themes/solarized_dark.yaml
+  # - ~/.config/alacritty/themes/solarized_light.yaml
+  # - ~/.config/alacritty/themes/taerminal.yaml
+  # - ~/.config/alacritty/themes/tango_dark.yaml
+  # - ~/.config/alacritty/themes/tender.yaml
+  # - ~/.config/alacritty/themes/terminal_app.yaml
+  # - ~/.config/alacritty/themes/thelovelace.yaml
+  # - ~/.config/alacritty/themes/tokyo-night-storm.yaml
+  # - ~/.config/alacritty/themes/tokyo-night.yaml
+  # - ~/.config/alacritty/themes/tomorrow_night.yaml
+  # - ~/.config/alacritty/themes/tomorrow_night_bright.yaml
+  # - ~/.config/alacritty/themes/ubuntu.yaml
+  # - ~/.config/alacritty/themes/wombat.yaml
+  # - ~/.config/alacritty/themes/xterm.yaml
+  # - ~/.config/alacritty/themes/zenburm.yaml
+
+window:
+  opacity: 0.9
+
