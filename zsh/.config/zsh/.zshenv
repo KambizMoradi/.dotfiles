@@ -19,3 +19,5 @@ export FZF_DEFAULT_OPTS='--reverse'
 # bat theme
 # export BAT_THEME="TwoDark"
 
+# pythonrc
+export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
