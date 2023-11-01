@@ -29,3 +29,7 @@ export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 
 # wine
 export WINEPREFIX="$XDG_DATA_HOME"/wine
+
+# vagrant
+export VAGRANT_HOME="$XDG_DATA_HOME"/vagrant
+
