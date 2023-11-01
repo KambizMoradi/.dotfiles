@@ -92,7 +92,7 @@ alias la='ls -a'
 alias ll='ls -l --human-readable --time-style="+%F %T %:z"'
 alias grep='grep --color=auto'
 
-alias ranger='ranger --choosedir=$HOME/.config/ranger/.rangerdir; LASTDIR=`cat $HOME/.config/ranger/.rangerdir`; cd "$LASTDIR";'
+alias ranger='ranger --choosedir=$HOME/.cache/ranger/.rangerdir; LASTDIR=`cat $HOME/.cache/ranger/.rangerdir`; cd "$LASTDIR";'
 alias d='clear -x;df --output --human-readable --exclude-type=tmpfs --exclude-type=devtmpfs | head -n 1;echo "===================================================================================";df --output --human-readable --exclude-type=tmpfs --exclude-type=devtmpfs | tail -n +2|sort;'
 alias vimconfig='vim ~/.config/nvim/init.vim'
 alias tree='tree -C'
