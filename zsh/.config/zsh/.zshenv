@@ -27,4 +27,5 @@ export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
 # xorg-xauth
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 
-
+# wine
+export WINEPREFIX="$XDG_DATA_HOME"/wine
