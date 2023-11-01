@@ -16,6 +16,9 @@ export VISUAL=/usr/bin/nvim;
 # FZF for fzf.vim
 export FZF_DEFAULT_OPTS='--reverse'
 
+# npm
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+
 # bat theme
 # export BAT_THEME="TwoDark"
 
