@@ -50,3 +50,6 @@ export IPYTHONDIR="${XDG_CONFIG_HOME}/ipython"
 
 # gnupg
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+
+# docker
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
