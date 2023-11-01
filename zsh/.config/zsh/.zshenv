@@ -44,3 +44,7 @@ export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 
 # julia
 export JULIA_DEPOT_PATH="$XDG_DATA_HOME/julia:$JULIA_DEPOT_PATH"
+
+# ipython
+export IPYTHONDIR="${XDG_CONFIG_HOME}/ipython"
+
