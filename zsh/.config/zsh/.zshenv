@@ -41,3 +41,6 @@ export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
 
 # less
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
+
+# julia
+export JULIA_DEPOT_PATH="$XDG_DATA_HOME/julia:$JULIA_DEPOT_PATH"
