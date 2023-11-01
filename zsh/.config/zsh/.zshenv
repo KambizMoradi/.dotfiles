@@ -19,5 +19,12 @@ export FZF_DEFAULT_OPTS='--reverse'
 # bat theme
 # export BAT_THEME="TwoDark"
 
+########################################################
+# CLEAN HOME DIRECTORY
 # pythonrc
 export PYTHONSTARTUP="${XDG_CONFIG_HOME}/python/pythonrc"
+
+# xorg-xauth
+export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+
+
