@@ -1,0 +1,60 @@
+#!/usr/bin/sh
+
+show_time=3000 # mili seconds
+
+clear
+# Clear Unneeded dependencies
+echo ------------------------------- Clear Unneeded Dependencies From Pacman
+sudo rm -f /var/lib/pacman/db.lck
+yes|sudo pacman -Rs $(pacman -Qdtq)
+if [[ "$?" == "0" ]]; then
+    notify-send "Not Needed Pacman Packages Cleared" --urgency=low --expire-time=$show_time
+else
+    notify-send "Cannot Clear Not Needed Pacman Packages" --expire-time=$show_time
+fi
+
+#yes|yay -Rs $(yay -Qdtq)
+echo -----------------------------------------------------------------------
+# Clear cache
+echo ------------------------------- Clearing Cache From Pacman
+yes|sudo pacman -Scc
+if [[ "$?" == "0" ]]; then
+    notify-send "Pacman Cache Cleared" --urgency=low --expire-time=$show_time
+else
+    notify-send "Cannot Clear Pacman Cashe" --urgency=critical
+fi
+echo ------------------------------- Update keyring
+yes|sudo pacman -Sy archlinux-keyring
+if [[ "$?" == "0" ]]; then
+    notify-send "archlinux-keyring reinstalled" --urgency=low --expire-time=$show_time
+else
+    notify-send "Cannot install archlinux-keyring" --urgency=critical
+fi
+echo -----------------------------------------------------------------------
+echo ------------------------------- Clearing Cache From Yay
+yes|yay -Scc
+if [[ "$?" == "0" ]]; then
+    notify-send "Yay Cache Cleared" --urgency=low --expire-time=$show_time
+else
+    notify-send "Cannot Clear Yay Cache" --urgency=critical
+fi
+echo -----------------------------------------------------------------------
+
+# Upgrade
+echo ------------------------------- Upgrading Pacman
+yes | sudo pacman -Syyuu
+if [[ "$?" == "0" ]]; then
+    notify-send "Pacman Updated" --urgency=low --expire-time=$show_time
+else
+    notify-send "Cannot Update Pacman" --urgency=critical
+fi
+echo -----------------------------------------------------------------------
+echo ------------------------------- Upgrading Yay
+yes | yay -Syyuu
+if [[ "$?" == "0" ]]; then
+    notify-send "Yay Updated" --urgency=low --expire-time=$show_time
+else
+    notify-send "Cannot Update Yay" --urgency=critical
+fi
+echo -----------------------------------------------------------------------
+sh ~/.myscripts/setting_mouse.sh
