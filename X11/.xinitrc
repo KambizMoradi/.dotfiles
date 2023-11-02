@@ -3,7 +3,7 @@ source ~/.myscripts/setting_mouse.sh
 source ~/.myscripts/setting_wallpapers.sh
 
 pkill ssh-agent
-eval `ssh-agent` &
+eval "$(ssh-agent)"
 
 killall slstatus
 slstatus &
