@@ -1,6 +1,6 @@
-source ~/.myscripts/setting_display.sh
-source ~/.myscripts/setting_mouse.sh
-source ~/.myscripts/setting_wallpapers.sh
+source ~/.dotfiles/X11/X11_setting_mouse.sh
+source ~/.dotfiles/X11/X11_setting_display.sh
+source ~/.dotfiles/X11/X11_setting_wallpapers.sh
 
 pkill ssh-agent
 eval "$(ssh-agent)"
