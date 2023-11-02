@@ -62,6 +62,3 @@ XF86AudioRaiseVolume
 XF86AudioLowerVolume
     amixer -c 1 set Master 4-
 
-XF86AudioMute
-    sh ~/.myscripts/amixer_toggle_mute
-
