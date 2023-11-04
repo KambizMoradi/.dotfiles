@@ -31,4 +31,4 @@ opt.updatetime = 50
 --------------------------------------------
 vim.cmd("syntax on")
 
-vim.keymap.set('n', '<F12>', ":w <bar> exec '!python3 '.shellescape('%')<CR>")
+--vim.keymap.set('n', '<F12>', ":w <bar> exec '!python3 '.shellescape('%')<CR>")
