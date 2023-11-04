@@ -98,7 +98,7 @@ alias vimconfig='vim ~/.config/nvim/init.vim'
 alias tree='tree -C'
 alias neofetch='clear -x;neofetch --cpu_temp C'
 
-alias des='cd ~/Desktop/;ll'
+alias tmp='cd /tmp/;ll'
 # alias doc='cd ~/Documents/;ll'
 alias dow='cd ~/Downloads/;ll'
 alias vid='cd ~/Videos/;ranger'
