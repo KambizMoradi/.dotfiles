@@ -110,8 +110,8 @@ alias cpu_mid='cpu_set_frequency 2900000'
 alias cpu_low='cpu_set_frequency 2800000'
 
 alias remove='sudo pacman -Rcns'
-alias resume='cd ~/Documents/Obsidian/Resume;ls -1'
+alias resume='cd ~/Documents/Repositories/CV/DevOps;ls -1'
 
 alias shekan='cat /etc/resolv.conf;echo "============";sudo cp /etc/resolv.conf_shekan /etc/resolv.conf;cat /etc/resolv.conf'
 
-alias dtt='clear; cd ~/.dotfiles; ll; git status -u'
+alias dfd='clear; cd ~/.dotfiles; ll; git status -u'
