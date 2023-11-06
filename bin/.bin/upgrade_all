@@ -57,4 +57,4 @@ else
     notify-send "Cannot Update Yay" --urgency=critical
 fi
 echo -----------------------------------------------------------------------
-sh ~/.dotfile/X11/X11_setting_mouse.sh
+sh ~/.dotfiles/X11/X11_setting_mouse.sh
