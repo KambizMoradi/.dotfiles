@@ -102,7 +102,7 @@ alias tmp='cd /tmp/;ll'
 # alias doc='cd ~/Documents/;ll'
 alias dow='cd ~/Downloads/;ll'
 alias vid='cd ~/Videos/;ranger'
-alias repo='cd ~/Repositories;ll'
+alias repo='cd ~/Documents/Repositories;ll'
 alias SD='cd ~/Phone/SD/;ll'
 
 alias cpu_high='cpu_set_frequency 4600000'
