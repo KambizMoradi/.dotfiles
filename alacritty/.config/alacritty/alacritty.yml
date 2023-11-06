@@ -25,13 +25,13 @@ env:
   # - ~/.config/alacritty/themes/
   # https://github.com/eendroroy/alacritty-theme
 import:
-  - ~/.config/alacritty/themes/Cobalt2.yaml
+  # - ~/.config/alacritty/themes/Cobalt2.yaml
   # - ~/.config/alacritty/themes/afterglow.yaml
   # - ~/.config/alacritty/themes/argonaut.yaml
   # - ~/.config/alacritty/themes/atom_one_light.yaml
   # - ~/.config/alacritty/themes/ayu_dark.yaml
   # - ~/.config/alacritty/themes/base16_default_dark.yaml
-  # - ~/.config/alacritty/themes/blood_moon.yaml
+  - ~/.config/alacritty/themes/blood_moon.yaml
   # - ~/.config/alacritty/themes/breeze.yaml
   # - ~/.config/alacritty/themes/campbell.yaml
   # - ~/.config/alacritty/themes/challenger_deep.yaml
