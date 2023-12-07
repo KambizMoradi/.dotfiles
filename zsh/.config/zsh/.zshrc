@@ -113,5 +113,6 @@ alias remove='sudo pacman -Rcns'
 alias resume='cd ~/Documents/Repositories/CV/DevOps;ls -1'
 
 alias shekan='cat /etc/resolv.conf;echo "============";sudo cp /etc/resolv.conf_shekan /etc/resolv.conf;cat /etc/resolv.conf'
+alias nashkan='cat /etc/resolv.conf;echo "============";sudo cp /etc/resolv.conf_router /etc/resolv.conf;cat /etc/resolv.conf'
 
 alias dfd='clear; cd ~/.dotfiles; ll; git status -u'
