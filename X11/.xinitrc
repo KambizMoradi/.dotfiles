@@ -23,6 +23,9 @@ dunst &
 pkill syncthing
 syncthing --no-browser&
 
+xset -dpms
+xset s off
+
 # Run dynamic windows manager
 # killall dwm
 # exec dwm >/dev/null 2>&1
