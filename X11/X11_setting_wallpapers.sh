@@ -4,7 +4,7 @@
 # Dir=~/Pictures/wallpapers/dark/
 # Dir=~/Pictures/wallpapers/light/
 
-Dir=~/Pictures/Wallpapers
+Dir=~/media/Pictures/Wallpapers
 # set background wallpapers
 nitrogen --set-scaled --head=0 --random $Dir/straight
 nitrogen --set-scaled --head=1 --random $Dir/straight
