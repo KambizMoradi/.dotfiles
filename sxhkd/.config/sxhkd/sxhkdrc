@@ -1,6 +1,9 @@
 super + f
     firefox
 
+super + g
+    brave https://github.com/KambizMoradi
+
 super + t
     brave https://translate.google.com/
 
