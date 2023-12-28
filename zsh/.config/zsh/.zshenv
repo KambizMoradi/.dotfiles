@@ -56,3 +56,8 @@ export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 
 # minikube
 export MINIKUBE_HOME="$XDG_DATA_HOME"/minikube
+
+# kubectl
+export KUBECONFIG="$XDG_CONFIG_HOME/kube"
+export KUBECACHEDIR="$XDG_CACHE_HOME/kube"
+
