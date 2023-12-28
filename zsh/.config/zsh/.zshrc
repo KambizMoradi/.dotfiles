@@ -103,6 +103,7 @@ alias doc='cd ~/Documents/;ll'
 alias dow='cd ~/Downloads/;ll'
 alias vid='cd ~/media/Videos/;ranger'
 alias repo='cd ~/Documents/Repositories;ll'
+alias tstlb='cd ~/Documents/Repositories/TestLab/;ll'
 
 alias cpu_high='cpu_set_frequency 4600000'
 alias cpu_mid='cpu_set_frequency 2900000'
@@ -115,3 +116,15 @@ alias shekan='cat /etc/resolv.conf;echo "============";sudo cp /etc/resolv.conf_
 alias nashkan='cat /etc/resolv.conf;echo "============";sudo cp /etc/resolv.conf_router /etc/resolv.conf;cat /etc/resolv.conf'
 
 alias dfd='clear; cd ~/.dotfiles; ll; git status -u; ranger'
+
+alias docker-clean='echo "==========before:" ;\
+					docker images ;\
+					echo "----------" ;\
+					docker system df ;\
+					echo "===============" ;\
+					docker image prune --all --force ;\
+					docker system prune --force;\
+					echo "==========after:" ;\
+					docker images ;\
+					echo "----------" ;\
+					docker system df'
