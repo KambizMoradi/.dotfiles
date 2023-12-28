@@ -6,7 +6,7 @@
 
 ```bash
 # to install all
-stow */
+stow */ --target=/home/kambiz
 
 # to install zsh
 stow zsh
