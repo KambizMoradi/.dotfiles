@@ -52,6 +52,8 @@ setopt HIST_IGNORE_SPACE
 # keybind
 ##############################################################################
 bindkey -e
+bindkey "^F" forward-word
+bindkey "^B" backward-word
 
 ##############################################################################
 # auto-completion
