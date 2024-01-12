@@ -136,9 +136,4 @@ alias docker-clean='echo "==========before:" ;\
 					docker images ;\
 					echo "----------" ;\
 					docker system df'
-
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
-
-# To customize prompt, run `p10k configure` or edit ~/Documents/Repositories/.dotfiles/zsh/.config/zsh/.p10k.zsh.
-[[ ! -f ~/Documents/Repositories/.dotfiles/zsh/.config/zsh/.p10k.zsh ]] || source ~/Documents/Repositories/.dotfiles/zsh/.config/zsh/.p10k.zsh
+alias k="kubectl"
