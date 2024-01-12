@@ -38,13 +38,14 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ##############################################################################
 # History Configuration
 ##############################################################################
-HISTSIZE=10000000              #How many lines of history to keep in memory
-SAVEHIST=1000000               #Number of history entries to save to disk
+export HISTSIZE=100000              #How many lines of history to keep in memory
+export SAVEHIST=1000000               #Number of history entries to save to disk
+# export HISTTIMEFORMAT="[%F %T] "
 
-setopt INC_APPEND_HISTORY
-setopt EXTENDED_HISTORY
-setopt HIST_FIND_NO_DUPS
-setopt HIST_IGNORE_ALL_DUPS
+setopt INC_APPEND_HISTORY			# Immediate append
+# setopt EXTENDED_HISTORY				# Add Timestamp to history
+setopt HIST_FIND_NO_DUPS			# Handling duplicate commands
+setopt HIST_IGNORE_ALL_DUPS			# Handling duplicate commands
 setopt HIST_REDUCE_BLANKS
 setopt HIST_IGNORE_SPACE
 
@@ -100,7 +101,7 @@ alias ll='ls -l --human-readable --time-style="+%F %T %:z"'
 alias grep='grep --color=auto'
 
 alias ranger='ranger --choosedir=$HOME/.cache/ranger/.rangerdir; LASTDIR=`cat $HOME/.cache/ranger/.rangerdir`; cd "$LASTDIR";'
-alias d='clear -x;df --output --human-readable --exclude-type=tmpfs --exclude-type=devtmpfs | head -n 1;echo "===================================================================================";df --output --human-readable --exclude-type=tmpfs --exclude-type=devtmpfs | tail -n +2|sort;'
+alias d='clear -x;df --output --human-readable --exclude-type=efivarfs --exclude-type=tmpfs --exclude-type=devtmpfs | head -n 1;echo "===================================================================================";df --output --human-readable --exclude-type=efivarfs --exclude-type=tmpfs --exclude-type=devtmpfs | tail -n +2|sort;'
 alias vimconfig='vim ~/.config/nvim/init.vim'
 alias tree='tree -C'
 alias neofetch='clear -x;neofetch --cpu_temp C'
@@ -135,3 +136,9 @@ alias docker-clean='echo "==========before:" ;\
 					docker images ;\
 					echo "----------" ;\
 					docker system df'
+
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/Documents/Repositories/.dotfiles/zsh/.config/zsh/.p10k.zsh.
+[[ ! -f ~/Documents/Repositories/.dotfiles/zsh/.config/zsh/.p10k.zsh ]] || source ~/Documents/Repositories/.dotfiles/zsh/.config/zsh/.p10k.zsh
