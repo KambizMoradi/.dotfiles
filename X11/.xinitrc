@@ -20,8 +20,8 @@ sxhkd &
 killall dunst
 dunst &
 
-pkill syncthing
-syncthing --no-browser&
+#pkill syncthing
+#syncthing --no-browser&
 
 xset -dpms
 xset s off
