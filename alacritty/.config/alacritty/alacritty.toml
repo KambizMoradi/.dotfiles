@@ -4,7 +4,7 @@ import = ["/home/kambiz/.config/alacritty/themes/blood_moon.toml"]
 WINIT_X11_SCALE_FACTOR = "1"
 
 [font]
-size = 17.0
+size = 20.0
 
 [font.bold]
 family = "monospace"

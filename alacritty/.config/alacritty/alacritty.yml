@@ -17,7 +17,7 @@ font:
     family: monospace
     style: Bold Italic
 
-  size: 17.0
+  size: 20.0
 
 env:
   WINIT_X11_SCALE_FACTOR: "1"
