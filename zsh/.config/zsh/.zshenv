@@ -35,6 +35,7 @@ export WINEPREFIX="$XDG_DATA_HOME"/wine
 
 # vagrant
 export VAGRANT_HOME="$XDG_DATA_HOME"/vagrant
+export VAGRANT_DEFAULT_PROVIDER=libvirt
 
 # pass
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
@@ -66,4 +67,5 @@ export KUBECACHEDIR="$XDG_CACHE_HOME/kube"
 export ANSIBLE_HOME="${XDG_CONFIG_HOME}/ansible"
 export ANSIBLE_CONFIG="${XDG_CONFIG_HOME}/ansible.cfg"
 export ANSIBLE_GALAXY_CACHE_DIR="${XDG_CACHE_HOME}/ansible/galaxy_cache"
+
 
