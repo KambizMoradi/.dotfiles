@@ -137,3 +137,4 @@ alias docker-clean='echo "==========before:" ;\
 					echo "----------" ;\
 					docker system df'
 alias k="kubectl"
+alias h="helm"
