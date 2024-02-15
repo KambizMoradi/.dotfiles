@@ -31,7 +31,7 @@ Scroll_Lock
 
 #scrot --quality 100 --select 'media/Pictures/screenshots/screenshot-%Y-%m-%d-%H-%M-%S.png' -e 'nautilus ~/Pictures/screenshots;'
 @Print
-    scrot --ignorekeyboard --quality 100 --select 'media/Pictures/screenshots/%Y-%m-%d-%H-%M-%S.png' -e 'xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/%Y-%m-%d-%H-%M-%S.png;'
+    scrot --ignorekeyboard --quality 100 --select 'media/Pictures/screenshots/%Y-%m-%d-%H-%M-%S.png' -e 'xclip -selection clipboard -t image/png -i ~/media/Pictures/screenshots/%Y-%m-%d-%H-%M-%S.png;'
 
 super + space
     sh ~/.config/sxhkd/change_key_layout.sh
