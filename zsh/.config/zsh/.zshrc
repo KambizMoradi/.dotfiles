@@ -111,13 +111,6 @@ alias vimconfig='vim ~/.config/nvim/init.vim'
 alias tree='tree -C'
 alias neofetch='clear -x;neofetch --cpu_temp C'
 
-alias tmp='cd /tmp/;ll'
-alias doc='cd ~/Documents/;ll'
-alias dow='cd ~/Downloads/;ll'
-alias vid='cd ~/media/Videos/;ranger'
-alias repo='cd ~/Documents/Repositories;ll'
-alias tstlb='cd ~/Documents/Repositories/TestLab/;ll'
-
 alias cpu_high='cpu_set_frequency 4600000'
 alias cpu_mid='cpu_set_frequency 2900000'
 alias cpu_low='cpu_set_frequency 2800000'
