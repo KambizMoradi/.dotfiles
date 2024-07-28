@@ -20,11 +20,17 @@ sxhkd &
 killall dunst
 dunst &
 
-#pkill syncthing
-#syncthing --no-browser&
+pkill syncthing
+syncthing --no-browser &
 
 xset -dpms
 xset s off
+
+export SYNC_USER1=Kambiz:AnkiKami6060
+export MAX_SYNC_PAYLOAD_MEGS=1000000
+export SYNC_BASE=./.local/share/Anki_Sync_Server
+pkill anki
+#anki --syncserver &
 
 # Run dynamic windows manager
 # killall dwm

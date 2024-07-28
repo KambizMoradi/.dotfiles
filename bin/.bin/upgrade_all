@@ -49,6 +49,7 @@ else
     notify-send "Cannot Update Pacman" --urgency=critical
 fi
 echo -----------------------------------------------------------------------
+sh ~/Documents/Repositories/.dotfiles/X11/X11_setting_mouse.sh
 echo ------------------------------- Upgrading Yay
 yes | yay -Syyuu
 if [[ "$?" == "0" ]]; then

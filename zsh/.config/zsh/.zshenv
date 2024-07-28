@@ -69,7 +69,7 @@ export ANSIBLE_CONFIG="${XDG_CONFIG_HOME}/ansible.cfg"
 export ANSIBLE_GALAXY_CACHE_DIR="${XDG_CACHE_HOME}/ansible/galaxy_cache"
 
 # zoxide
-export _ZO_DATA_DIR=$XDG_DATA_HOME
+export _ZO_DATA_DIR="$XDG_DATA_HOME/zoxide"
 export _ZO_ECHO=0
 export _ZO_EXCLUDE_DIRS="$HOME"
 export _ZO_FZF_OPTS=""

@@ -8,4 +8,4 @@ xrandr --output DisplayPort-0 --mode 1920x1080 --pos 0x20 --rotate normal --outp
 
 
 xrandr --output DisplayPort-0 --brightness 0.75
-xrandr --output HDMI-A-0 --brightness 0.75
+xrandr --output HDMI-A-0 --brightness 1
