@@ -136,5 +136,7 @@ alias docker-clean='echo "==========before:" ;\
 					docker system df'
 alias k="kubectl"
 alias h="helm"
-
 alias zr="zi ; ranger"
+
+# taskwarrior aliases
+source ~/.config/task/taskrc_aliases.sh
