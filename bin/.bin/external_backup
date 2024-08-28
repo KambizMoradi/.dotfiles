@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 dir_to_mount=/External_backup_HDD
-sudo mount UUID= $dir_to_mount
+sudo mount UUID=3a1e9bb2-fd1d-4794-9a11-6d2323b6d487 $dir_to_mount
 if [[ "$?" == "0" ]]; then
     notify-send "External Drive mounted to $dir_to_mount" -u low
     rsync \
@@ -17,7 +17,8 @@ if [[ "$?" == "0" ]]; then
 		--exclude '/home/kambiz/.cache' \
 		--exclude '*mozilla*' \
 		--exclude '*Brave*' \
-		--include '/home' \
+		--exclude '/home/kambiz/.pki' \
+		/home \
 		$dir_to_mount
 
     if [[ "$?" == "0" ]]; then
@@ -26,7 +27,7 @@ if [[ "$?" == "0" ]]; then
         notify-send "Cannot Backup to External Drive" -u critical
     fi
 
-    sudo umount $dir_to_mount
+	sudo umount $dir_to_mount
     if [[ "$?" == "0" ]]; then
         notify-send "External Drive Unmounted" -u low
     fi
