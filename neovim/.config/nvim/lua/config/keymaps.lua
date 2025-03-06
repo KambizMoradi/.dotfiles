@@ -1,0 +1,67 @@
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps here
+
+-- keymap.lua
+
+-- Function to check if the current file is a Python file
+local function is_python_file()
+  return vim.bo.filetype == "python"
+end
+
+-- Function to check if the current file is a LaTeX file
+local function is_latex_file()
+  return vim.bo.filetype == "tex"
+end
+
+-- Function to save and run the current Python file
+local function run_python_file()
+  if is_python_file() then
+    vim.cmd("w") -- Save the file
+    local filepath = vim.fn.expand("%:p") -- Get the full path of the current file
+    local cmd = string.format("python %s && read", filepath) -- Build the command to run the file
+    vim.cmd('!terminator -x bash -c "' .. cmd .. '"')
+  end
+end
+
+-- Function to save and compile the current LaTeX file with pdflatex
+local function compile_latex_file()
+  if is_latex_file() then
+    vim.cmd("w") -- Save the file
+    local filepath = vim.fn.expand("%:p") -- Get the full path of the current file
+    local filename = vim.fn.expand("%:r") -- Get the file name without extension
+    local cmd = string.format('pdflatex "%s" && zathura "%s.pdf"', filepath, filename) -- Build the command
+    vim.cmd('!terminator -e "' .. cmd .. '"')
+  end
+end
+
+-- Function to handle the keybinding logic
+local function handle_keymap()
+  if is_python_file() then
+    run_python_file()
+  elseif is_latex_file() then
+    compile_latex_file()
+  else
+    print("Unsupported file type!") -- Notify the user if the file type is unsupported
+  end
+end
+
+-- Define keybindings for all modes
+local modes = { "n", "v", "i", "c" } -- Normal, Visual, Insert, Command-line modes
+for _, mode in ipairs(modes) do
+  vim.api.nvim_set_keymap(
+    mode,
+    "<F12>",
+    "", -- No direct command; we'll use a Lua function
+    {
+      noremap = true,
+      silent = false,
+      callback = function()
+        if mode == "i" or mode == "c" then
+          vim.cmd("stopinsert") -- Exit Insert or Command-line mode
+        end
+        handle_keymap()
+      end,
+    }
+  )
+end
